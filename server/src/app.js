@@ -15,9 +15,9 @@ app.get('/', function(req, res){
     res.send('Accueil');
 });
 
-app.get('/status', (req, res)=>{
+app.post('/register', (req, res)=>{
     res.send({
-        message: 'Hello World'
+        message: `Hello ${req.body.email} Your user was registered !`
     });
 });
 
